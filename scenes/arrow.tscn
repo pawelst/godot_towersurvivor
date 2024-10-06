@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dywvrjq5ooovl"]
+
+[ext_resource type="Script" path="res://scripts/arrow.gd" id="1_bkg72"]
+[ext_resource type="Texture2D" uid="uid://c1h63m3dewvfx" path="res://Assets/105.png" id="2_lglv3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_50po6"]
+radius = 2.0
+
+[node name="Arrow" type="Area2D"]
+z_index = 2
+y_sort_enabled = true
+collision_mask = 2
+script = ExtResource("1_bkg72")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 0.785398
+texture = ExtResource("2_lglv3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 3
+y_sort_enabled = true
+texture_filter = 5
+position = Vector2(3, 0)
+shape = SubResource("CircleShape2D_50po6")

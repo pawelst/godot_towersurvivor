@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbyxpt5ejdb08"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_5ao4d"]
+
+[node name="Tower" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("ImageTexture_5ao4d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
